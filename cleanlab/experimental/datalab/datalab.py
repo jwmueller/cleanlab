@@ -385,7 +385,7 @@ class Datalab:
 class IssueManager(ABC):
     """ Base class for managing issues in a Datalab.
     
-        For each example in dataset, the IssueManager for a particular type of issue should compute:
+        For each example in a dataset, the IssueManager for a particular type of issue should compute:
         - A numeric severity score between 0 and 1, with values near 0 indicating severe instances of the issue.
         - A boolean `is_issue` value, which is True if we believe this example suffers from the issue in question.
           `is_issue` may be determined by thresholding the severity score (with an a priori determined reasonable threshold value),
